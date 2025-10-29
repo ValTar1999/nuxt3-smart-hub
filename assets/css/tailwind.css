@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .focus-button {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-white focus-visible:ring-smart-secondary;
+  }
+  .focus-input {
+    @apply focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-smart-secondary focus-visible:border-smart-secondary;
+  }
+  .focus-input {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-smart-secondary focus-visible:border-smart-secondary;
+  }
+  .link {
+    @apply focus:outline-none text-smart-main hover:text-smart-main-darken hover:underline;
+  }
+}
+
+.border-sidebar {
+  --tw-bg-opacity: 1;
+  box-shadow: inset -1px 0 0 0 rgb(229 231 235 / var(--tw-border-opacity, 1));
+}
+
+.component-tooltip-dark {
+  @apply whitespace-normal rounded-lg px-2.5 py-1 text-left text-sm text-gray-100 bg-gray-900;
+}
