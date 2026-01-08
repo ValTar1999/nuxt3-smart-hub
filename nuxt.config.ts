@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   // GitHub Pages configuration
   ssr: false,
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/nuxt3-smart-hub/' : '/',
+    baseURL: process.env.GITHUB_ACTIONS ? '/nuxt3-smart-hub/' : '/',
     buildAssetsDir: '/_nuxt/'
   },
 
