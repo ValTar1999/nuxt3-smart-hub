@@ -3,6 +3,13 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
+  // GitHub Pages configuration
+  ssr: false,
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/nuxt3-smart-hub/' : '/',
+    buildAssetsDir: '/_nuxt/'
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
